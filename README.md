@@ -18,10 +18,7 @@ How to use this function?
 3.	Copy and paste Normalization.R, Threshold.R and Threshold_iono.R files into the folder from step 2
 4.	In the R interface: File  Source R code select a file from step 3, repeat for all the three files
 5.	Type: Normalization_ionomycin() in the R console and follow along with the prompt
-Important considerations:
-Make sure the input file is in .csv format with column headers as Time/frames, <however many cells you have>, column with background intensity (obtained by selecting a dark area in the field of view in ImageJ). 
-Two sample input files are provided: one with ph5 response named “TestR.csv” and another with ionomycin response “ionotest.csv”.
-“SampleCalculations.xlsx” shows a step-by-step breakdown of this software in an excel format for ease of understanding.
+
   
 # Aim 2: To record peak response of a drug responder. 
 
