@@ -1,0 +1,1 @@
+matplot(<enter your dataname here>[,1],<enter your dataname here>[,-1], type = "l", ylab = "F", xlab = "Time (s)")
