@@ -1,5 +1,5 @@
 # Calcium Imaging
-# The purpose of this toolbox is to analyse calcium imaging data obtained by using Fluo4 (non-ratiometric Calcium indicator) and raw mean gray values obtained from the ImageJ software.
+# The purpose of this toolbox is to analyze calcium imaging data obtained by using Fluo4 (non-ratiometric Calcium indicator) and raw mean gray values obtained from the ImageJ software.
 
 # Aim 1: To identify % of cells that have responded to the drug of interest and the positive control. Download CaImagingFunctionsRDocumentation.docx for detailed methodology and variable listing. 
 
@@ -25,7 +25,7 @@ Two sample input files are provided: one with ph5 response named “TestR.csv”
   
 # Aim 2: To record peak response of a drug responder. 
 
-Important consideration: Use the normalised (output) file from the above function in a .csv format. 
+Important consideration: Use the normalized (output) file from the above function in a .csv format. 
 
 Filename: Peakcurrent.R
 
