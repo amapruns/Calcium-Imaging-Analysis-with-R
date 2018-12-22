@@ -6,7 +6,7 @@
 Important considerations:
 Make sure the input file is in .csv format with column headers as Time/frames, however many cells you have, column with background intensity (obtained by selecting a dark area in the field of view in ImageJ). 
 Two sample input files are provided: one with ph5 response named “TestR.csv” and another with ionomycin response “ionotest.csv”.
-“SampleCalculations.xlsx” shows a step-by-step breakdown of this software in an excel format for ease of understanding.
+“SampleCalculations.xlsx” shows a step-by-step breakdown of the calculations performed by this software in an excel format for ease of understanding.
 
 
 Function: Normalization_ionomycin() (This function integrates two other functions, see below)
