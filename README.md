@@ -4,7 +4,7 @@
 # Aim 1: To identify % of cells that have responded to the drug of interest and the positive control. Download CaImagingFunctionsRDocumentation.docx for detailed methodology and variable listing. 
 
 Important considerations:
-Make sure the input file is in .csv format with column headers as Time/frames, <however many cells you have>, column with background intensity (obtained by selecting a dark area in the field of view in ImageJ). 
+Make sure the input file is in .csv format with column headers as Time/frames, however many cells you have, column with background intensity (obtained by selecting a dark area in the field of view in ImageJ). 
 Two sample input files are provided: one with ph5 response named “TestR.csv” and another with ionomycin response “ionotest.csv”.
 “SampleCalculations.xlsx” shows a step-by-step breakdown of this software in an excel format for ease of understanding.
 
