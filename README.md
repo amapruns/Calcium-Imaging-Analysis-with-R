@@ -22,3 +22,16 @@ Important considerations:
 Make sure the input file is in .csv format with column headers as Time/frames, <however many cells you have>, column with background intensity (obtained by selecting a dark area in the field of view in ImageJ). 
 Two sample input files are provided: one with ph5 response named “TestR.csv” and another with ionomycin response “ionotest.csv”.
 “SampleCalculations.xlsx” shows a step-by-step breakdown of this software in an excel format for ease of understanding.
+  
+# Aim 2: To record peak response of a drug responder. 
+
+Important consideration: Use the normalised (output) file from the above function in a .csv format. 
+
+Filename: Peakcurrent.R
+
+How to use this function?
+
+1) Type: peakresponse() in your R prompt and follow instructions
+
+This function computes the maxima of each column.
+
