@@ -1,4 +1,4 @@
-# Calcium Imaging
+# Calcium Imaging code
 # The purpose of this toolbox is to analyze calcium imaging data obtained by using Fluo4 (non-ratiometric Calcium indicator) and raw mean gray values obtained from the ImageJ software.
 
 # Aim 1: To identify % of cells that have responded to the drug of interest and the positive control. Download CaImagingFunctionsRDocumentation.docx for detailed methodology and variable listing. 
