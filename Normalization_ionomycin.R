@@ -1,6 +1,6 @@
 
 #This function normalizes all Ca imaging responses to ionomycin response (F/Fmax)
-#Returns a matrix with F/Fmax values and %of cells that responded to both Iono and drug
+#Returns a matrix with F/Fmax values and % of cells that responded to both Iono and drug
 
 #Variables
   #Numeric
@@ -12,11 +12,13 @@
 
 Normalization_ionomycin<-function(){
 
-Threshold()#returning a Global list with objects A_new, orig.cols: upto baseline subtraction analysis done
-Threshold_iono()#returning Mean_peak: an array of actual ionomycin peak response
+Threshold()#after baseline subtraction, populating a Global list 'matandcolnames' containing objects A_new, orig.cols
+Threshold_iono()#populating global array 'Mean_peak': an array of actual ionomycin peak response
+#copying into local variables
 Analyzed<-matandcolnames$A_new
 orig.cols<-matandcolnames$orig.cols
 
+#normalizing intensity values
 for(j in 2:ncol(Analyzed)){
   for(i in 1:nrow(Analyzed)){
    Analyzed[i,j]<-matandcolnames$A_new[i,j]/Mean_peak[j]
