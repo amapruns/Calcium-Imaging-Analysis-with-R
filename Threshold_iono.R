@@ -2,18 +2,6 @@
 # Returns which cells responded to ionomycin (Threshold=mean+2 * st.dev) and mean peak response of those cells
 #Inputs: Ionomycin response .csv file 
 
-#Variables - see documentation for details
-  #numeric variables
-     #i,j,r1,r2,r3,r4,count, percent
-  #matrices
-     #A,nob,nor,M, A.new, M1, Mp, A.iono, Peak
-  #vectors
-     #Back,Mm,St1
-  #arrays
-     #Mma,Mm1, threshold, Mmp, Mean_peak
-  #Strings
-     #File, filename, outputfile
-
 Threshold_iono<-function(){
 
 File<-readline(prompt="Enter .csv ionomycin filename (w/o etxn) ")
