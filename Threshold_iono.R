@@ -21,11 +21,11 @@ M<-nob[r1:r2,]
 meanM<-colMeans(M)
 meanArrayM<-array(meanM)#vector 'meanM' is dimensionless in R, hence array of means 'meanArrayM' created
 
-#Subtracting baseline mean from all the values and putting into a matrix called nor(normalized)
+#Subtracting baseline mean from all the values and putting into a matrix called 'nor'(normalized)
 nor<-nob
 for(i in 2:ncol(nob)){
   for(j in 1:nrow(nob)){
-   nor[j,i]<-nob[j,i]-Mma[i]
+   nor[j,i]<-nob[j,i]-meanArrayM[i]
     }
   }
 
@@ -70,8 +70,8 @@ write.csv(A.new,file=paste(outputfile,".csv",sep=""))
 }
 
 #Actual mean peak extracted from the responders
-peak<-A.iono[r3:r4,]
-Mean_peak<-array(colMeans(peak))
+actualPeak<-A.iono[r3:r4,]
+Mean_peak<-array(colMeans(actualPeak))
 assign("Mean_peak",Mean_peak,.GlobalEnv)#declaring it global so that other functions can use it
 return()
 }
