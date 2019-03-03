@@ -9,7 +9,7 @@ The purpose of this toolbox is to analyze calcium imaging data obtained by using
 - In the R interface, select `File > Source R code` : select each R file. Repeat the process until all source files you need to execute are selected.
 
 
-### Part 1: To identify % of cells that have responded to the drug of interest and the positive control
+### Part 1: Identify % of cells that have responded to the drug of interest and positive control
 
 Description: This function takes a separate drug response file and ionomycin (or any other drug you want to normalize to, for e.g. KCl) response file from a Calcium Imaging dataset as input and generates a csv file with normalized instensity (`F/Fmax`) values for all the cells that meet threshold (mean + 5 X st.dev) for both ionomycin and the drug in question. The input is directly from ImageJ mean gray values of ROIs saved as .csv files.
 Read `CaImagingFunctionsRDocumentation.docx` for detailed methodology and variable listing. 
@@ -27,7 +27,7 @@ To run this program:
 Type `Normalization_ionomycin()` in the R console and follow along with the prompt
 
   
-### Part 2: To record peak response of a drug responder 
+### Part 2: Record peak response of a drug responder 
 
 Description: This function computes the maxima of each column from the data produced in **Part 1**.
 
