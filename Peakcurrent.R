@@ -1,7 +1,5 @@
 
-#This function finds the peak Ca imaging response (F/Fmax)
-
-
+#This function finds the peak Ca imaging response
 
 peakresponse<-function(){
 
@@ -12,7 +10,6 @@ colMax <- function (colData) {
     apply(colData, MARGIN=c(2), max)
 }
 peak<-colMax(data)
-
 
 outputfile<-readline(prompt="Enter .csv output file name ")
 write.csv(peak,file=paste(outputfile,".csv",sep=""))
