@@ -70,8 +70,8 @@ write.csv(A.new,file=paste(outputfile,".csv",sep=""))
 }
 
 #Actual mean peak extracted from the responders
-actualPeak<-A.iono[r3:r4,]
-Mean_peak<-array(colMeans(actualPeak))
+filteredPeak<-A.iono[r3:r4,]
+Mean_peak<-array(colMeans(filteredPeak))
 assign("Mean_peak",Mean_peak,.GlobalEnv)#declaring it global so that other functions can use it
 return()
 }
