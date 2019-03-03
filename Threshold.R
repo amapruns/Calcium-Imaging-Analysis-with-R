@@ -2,20 +2,6 @@
 #Inputs: .csv file (obtained from ImageJ), frame numbers for baseline, frame numbers for denote peak response
 #Only cells that meet the threshold of (baseline mean+2St.dev)and their column names are returned 
 
-#Variables - see documentation for details
-  #numeric variables
-     #i,j,r1,r2,r3,r4,count, percent
-  #matrices
-     #A,nob,nor,M, A_new, M1, Mp
-  #vectors
-     #Back,Mm,St1
-  #arrays
-     #Mma,orig.cols, Mm1, threshold, Mmp
-  #Strings
-     #File, filename, outputfile
-  #List
-     #matandcolnames
-
 Threshold<-function(){
 
 File<-readline(prompt="Enter .csv filename (w/o etxn) where each column is a cell (last column is Background) and each row is a frame ")
