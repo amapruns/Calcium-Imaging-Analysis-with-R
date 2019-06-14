@@ -33,7 +33,7 @@ Description: This function computes the maxima of each column from the data prod
 
 Filename: `Peakcurrent.R`
 
-Important consideration: Use the normalized (output) file from the above function in a .csv format. 
+Important consideration: Use the normalized (output) file from the above function in a .csv format. **Please delete the cell identifiers in the file, i.e. row and column names from the .csv file** 
 
 To run this program:
 Type `peakresponse()` in your R prompt and follow subsequent instructions
